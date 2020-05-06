@@ -6,6 +6,7 @@ Download the "Release" folder and execute the "emunes.exe" file.
 
 ## Usage
 Create a "roms" folder inside the emulator folder and place in there all the roms.
+
 When opened, two windows will appear, a big white one and a CMD one. Type in the CMD one the name of the rom including the ".nes"
 
 # Commands
