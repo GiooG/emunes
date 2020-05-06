@@ -18,6 +18,16 @@ Arrow keys Up/Down/Left/Right = DPAD Up/Down/Left/Right
 
 Escape = quit program
 
+# Changelogs
+-v003
+~SOUND FINALLY IMPLEMENTED YAAAY, however is really wonky and works only on 64bit PCs ;(
+
+-v002:
+~minor optimizations
+
+-v001:
+~first release
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
