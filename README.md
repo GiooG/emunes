@@ -2,7 +2,7 @@
 emunes is a small NES emulator that is currently WiP.
 
 ## Installation
-Download the "Release" folder and execute the "emunes.exe" file.
+Go in the releases and download the .zip. Enjoy!
 
 ## Usage
 Create a "roms" folder inside the emulator folder and place in there all the roms.
