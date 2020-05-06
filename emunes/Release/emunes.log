@@ -1,0 +1,14 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: la directory intermedia (Release\) contiene file condivisi da un altro progetto (nesemu_test.vcxproj). Tale condizione può comportare un comportamento di pulizia e ricompilazione non corretto.
+  bus.cpp
+  cartridge.cpp
+  graphics.cpp
+  main.cpp
+  mapper.cpp
+  mapper000.cpp
+  processor.cpp
+  Generazione codice in corso...
+  1488 of 1500 functions (99.2%) were compiled, the rest were copied from previous compilation.
+    136 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Generazione codice terminata
+  emunes.vcxproj -> D:\SIMONE\c++\emunes\Release\emunes.exe
