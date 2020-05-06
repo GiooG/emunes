@@ -16,7 +16,7 @@ s = Start
 
 Arrow keys Up/Down/Left/Right = DPAD Up/Down/Left/Right
 
-Space = quit program
+Escape = quit program
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
