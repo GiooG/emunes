@@ -9,13 +9,18 @@ When opened, two windows will appear, a big white one and a CMD one. Type in the
 
 # Commands
 z = B
+
 x = A
+
 s = Start
+
 Arrow keys Up/Down/Left/Right = DPAD Up/Down/Left/Right
+
 Space = quit program
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
 Please make sure to update tests as appropriate.
 
 # License (OLC-3)
