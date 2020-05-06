@@ -5,7 +5,7 @@ emunes is a small NES emulator that is currently WiP.
 Download the "Release" folder and execute the "emunes.exe" file.
 
 ## Usage
-When opened, two windows will appear, a big white one and a CMD one. Type in the CMD one the path to your rom (just create a "roms" folder and place in your roms, then in CMD type "roms/romname.nes").
+When opened, two windows will appear, a big white one and a CMD one. Type in the CMD one the name of the rom including the ".nes"
 
 # Commands
 z = B
