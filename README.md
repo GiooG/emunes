@@ -25,6 +25,9 @@ Escape = quit program
 # Changelogs
 -v003
 ~SOUND FINALLY IMPLEMENTED YAAAY, however is really wonky and works only on 64bit PCs ;(
+^rev1:
+~Escape for quitting not working in v003, rev1 fixed it
+~Minor fixes/optimizations
 
 -v002:
 ~minor optimizations
