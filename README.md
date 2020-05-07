@@ -16,6 +16,8 @@ x = A
 
 s = Start
 
+a = Select
+
 Arrow keys Up/Down/Left/Right = DPAD Up/Down/Left/Right
 
 Escape = quit program
