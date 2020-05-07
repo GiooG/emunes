@@ -148,7 +148,7 @@ private:
 		nes.controller[0] |= GetKey(olc::Key::RIGHT).bHeld ? 0x01 : 0x00;
 
 		if (GetKey(olc::Key::R).bPressed) nes.reset();
-		if (GetKey(olc::Key::P).bPressed) (++nSelectedPalette) &= 0x07;
+		if (GetKey(olc::Key::ESCAPE).bPressed) exit(0);
 
 		DrawSprite(0, 0, &nes.ppu.GetScreen(), 1);
 		return true;

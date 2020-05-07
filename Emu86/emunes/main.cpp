@@ -55,34 +55,8 @@ private:
 	bool bEmulationRun = true;
 	float fResidualTime = 0.0f;
 
-	uint8_t nSelectedPalette = 0x00;
-
-	std::list<uint16_t> audio[4];
-	float fAccumulatedTime = 0.0f;
-
 private:
-	std::map<uint16_t, std::string> mapAsm;
-
-	std::string hex(uint32_t n, uint8_t d)
-	{
-		std::string s(d, '0');
-		for (int i = d - 1; i >= 0; i--, n >>= 4)
-			s[i] = "0123456789ABCDEF"[n & 0xF];
-		return s;
-	};
-
 	static EmuNES* pInstance;
-
-	static float SoundOut(int nChannel, float fGlobalTime, float fTimeStep)
-	{
-		if (nChannel == 0)
-		{
-			while (!pInstance->nes.clock()) {};
-			return static_cast<float>(pInstance->nes.dAudioSample);
-		}
-		else
-			return 0.0f;
-	}
 
 	bool OnUserCreate() override
 	{
@@ -95,12 +69,7 @@ private:
 			return false;
 
 		nes.insertCartridge(cart);
-
-		for (int i = 0; i < 4; i++)
-		{
-			for (int j = 0; j < 120; j++)
-				audio[i].push_back(0);
-		}
+		
 		nes.reset();
 
 		pInstance = this;
@@ -128,9 +97,8 @@ private:
 		nes.controller[0] |= GetKey(olc::Key::LEFT).bHeld ? 0x02 : 0x00;
 		nes.controller[0] |= GetKey(olc::Key::RIGHT).bHeld ? 0x01 : 0x00;
 
-		if (GetKey(olc::Key::SPACE).bPressed) bEmulationRun = !bEmulationRun;
 		if (GetKey(olc::Key::R).bPressed) nes.reset();
-		if (GetKey(olc::Key::P).bPressed) (++nSelectedPalette) &= 0x07;
+		if (GetKey(olc::Key::ESCAPE).bPressed) exit(0);
 
 		if (bEmulationRun)
 		{
@@ -143,24 +111,7 @@ private:
 				nes.ppu.frame_complete = false;
 			}
 		}
-		else
-		{
-			if (GetKey(olc::Key::C).bPressed)
-			{
-				do { nes.clock(); } while (!nes.cpu.complete());
-				do { nes.clock(); } while (nes.cpu.complete());
-			}
-
-			if (GetKey(olc::Key::F).bPressed)
-			{
-				do { nes.clock(); } while (!nes.ppu.frame_complete);
-				do { nes.clock(); } while (!nes.cpu.complete());
-				nes.ppu.frame_complete = false;
-			}
-		}
-
-		const int nSwatchSize = 6;
-
+		
 		DrawSprite(0, 0, &nes.ppu.GetScreen(), 1);
 		return true;
 	}
