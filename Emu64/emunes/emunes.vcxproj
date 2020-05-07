@@ -137,11 +137,6 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mapper.cpp" />
     <ClCompile Include="mapper000.cpp" />
-    <ClCompile Include="mapper001.cpp" />
-    <ClCompile Include="mapper002.cpp" />
-    <ClCompile Include="mapper003.cpp" />
-    <ClCompile Include="mapper004.cpp" />
-    <ClCompile Include="mapper066.cpp" />
     <ClCompile Include="processor.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -151,11 +146,6 @@
     <ClInclude Include="graphics.h" />
     <ClInclude Include="mapper.h" />
     <ClInclude Include="mapper000.h" />
-    <ClInclude Include="mapper001.h" />
-    <ClInclude Include="mapper002.h" />
-    <ClInclude Include="mapper003.h" />
-    <ClInclude Include="mapper004.h" />
-    <ClInclude Include="mapper066.h" />
     <ClInclude Include="processor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

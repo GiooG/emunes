@@ -39,21 +39,6 @@
     <ClCompile Include="audio.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
-    <ClCompile Include="mapper001.cpp">
-      <Filter>File di origine</Filter>
-    </ClCompile>
-    <ClCompile Include="mapper002.cpp">
-      <Filter>File di origine</Filter>
-    </ClCompile>
-    <ClCompile Include="mapper003.cpp">
-      <Filter>File di origine</Filter>
-    </ClCompile>
-    <ClCompile Include="mapper004.cpp">
-      <Filter>File di origine</Filter>
-    </ClCompile>
-    <ClCompile Include="mapper066.cpp">
-      <Filter>File di origine</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="processor.h">
@@ -75,21 +60,6 @@
       <Filter>File di intestazione</Filter>
     </ClInclude>
     <ClInclude Include="audio.h">
-      <Filter>File di intestazione</Filter>
-    </ClInclude>
-    <ClInclude Include="mapper001.h">
-      <Filter>File di intestazione</Filter>
-    </ClInclude>
-    <ClInclude Include="mapper002.h">
-      <Filter>File di intestazione</Filter>
-    </ClInclude>
-    <ClInclude Include="mapper003.h">
-      <Filter>File di intestazione</Filter>
-    </ClInclude>
-    <ClInclude Include="mapper004.h">
-      <Filter>File di intestazione</Filter>
-    </ClInclude>
-    <ClInclude Include="mapper066.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
   </ItemGroup>
