@@ -2,12 +2,14 @@
 emunes is a small NES emulator that is currently WiP.
 
 ## Installation
-Go in the releases and download the .zip. Enjoy!
+Go in the releases and download the latest '.zip'.
+
+Enjoy!
 
 ## Usage
 Create a "roms" folder inside the emulator folder and place in there all the roms.
 
-When opened, two windows will appear, a big white one and a CMD one. Type in the CMD one the name of the rom including the ".nes"
+When opened, two windows will appear, a big white one and a CMD one. Type in the CMD one the name of the rom including the ".nes".
 
 # Commands
 z = B
